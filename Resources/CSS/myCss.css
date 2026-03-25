@@ -1,0 +1,25 @@
+body{
+    font-size: 36px;
+    font-family: open;
+    text-align: center;
+     font-family: 'Open-Dyslexic', sans-serif;
+     background-image: radial-gradient(red, yellow, green);
+     
+}
+iframe{
+  border-radius: 50px;
+}
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.image_class_container{
+  display: flex;
+  justify-content: center;
+  
+}
+
+img{
+    border-radius: 50px 0px;
+}
