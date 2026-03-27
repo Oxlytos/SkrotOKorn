@@ -8,19 +8,71 @@
   box-shadow: 0 0 1000px rgb(51, 43, 9) inset;
 }
 
-.center{
-  margin:20px;
-padding:0px;
-text-align: left;
- display: flex;
+form {
+  display: block;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background-color: rgba(245, 222, 179, 0.753);
+  border-style: solid;
+  border-width: 25px;
+  border-color: wheat;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  font-size: 50px;
+  background-color: orange;
+  color: white;
+}
+
+.center {
+  margin: 20px;
+  padding: 0px;
+  text-align: left;
+  display: flex;
   justify-content: center;
 }
-table{
+
+input {
+  font-size: 26px;
+}
+
+input[type=text],
+select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  transform: scale(2);
+}
+
+input[type=submit] {
+  display: inline-block;
+
+  transform: scale(2);
+  font-family: 'Open-Dyslexic', sans-serif;
+  font-size: 24px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+table {
   background-color: white;
-   border-style: dotted;
+  border-style: dotted;
   border-color: blue;
 }
-th, td {
+
+th,
+td {
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -28,20 +80,23 @@ th, td {
   border-style: solid;
   border-color: rgb(255, 30, 0);
 }
-body{
-margin:0px;
-padding:0px;
-min-height: 100vw;
-height: 100%;
- font-size: 36px;
-    font-family: open;
-    text-align: center;
-     font-family: 'Open-Dyslexic', sans-serif;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vw;
+  height: 100%;
+  font-size: 36px;
+  font-family: open;
+  text-align: center;
+  font-family: 'Open-Dyslexic', sans-serif;
 }
-h1{
+
+h1 {
   color: rgb(197, 107, 4);
   text-shadow: 2px 2px purple;
 }
+
 iframe {
   border-radius: 50px;
 }
@@ -60,7 +115,8 @@ iframe {
 
 img {
   border-radius: 50px 0px;
-  height: 600px;  width: 600px
+  height: 600px;
+  width: 600px
 }
 
 ul {

@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
     <link rel="stylesheet" href="Resources/CSS/myCss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +40,59 @@
                 </th>
             </tr>
         </table>
+    </div>
+    <div class="center">
+        <form>
+            <h2>Kontakt formulär</h2>
+
+            <p>
+            <label for="name">Namn</label>
+            <input type="text" name="name">
+            </p>
+
+            <p>
+            <label for="phone">Telefon kontakt nummer</label>
+            <input type="text" name="phone">
+            </p>
+
+            <label for="address">Adress</label>
+            <input type="text" name="address">
+
+            <p>Kundstatus (privat eller företag)</p>
+            <label for="private">Privatkund</label>
+            <input type="radio" name="customerstatus" value="private">
+
+            <label for="private">Företag</label>
+            <input type="radio" name="customerstatus" value="private">
+
+            <p>Om företag, storlek på företag</p>
+            <label for="100">1-100 anställda</label>
+            <input type="radio" name="companysize" value="100">
+
+            <label for="1000">101-1000</label>
+            <input type="radio" name="companysize" value="1000">
+
+            <label for="1001">Mer än 1000</label>
+            <input type="radio" name="companysize" value="1001">
+
+            <p>Info till oss (om det behövs)</p>
+            <textarea id="msgToUs" cols="50" rows="10"></textarea>
+
+            <p></p>
+            <label for="newsletter">Prenumerera på nyhetsbrev från Skrot O Korn?</label>
+            <input type="checkbox" name="newsletter">
+
+            <p></p>
+            <label for="contactByPhone">Vill du bli kontaktad genom telefon?</label>
+            <input type="checkbox" name="contactByPhone">
+
+
+            <p></p>
+            <div class="center" style="margin-top: 50px;">
+            <input type="submit" value="Skicka in!" >
+            </div>
+
+        </form>
     </div>
 </body>
 
