@@ -1,11 +1,70 @@
 .backgroundimage {
   backdrop-filter: blur(9.7px);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 120%;
-  width: 120%;
+
   background: url(/Resources/Imgs/background.jpg)no-repeat center center fixed;
   box-shadow: 0 0 1000px rgb(51, 43, 9) inset;
+  background-size: cover
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  /* adjust as needed */
+  overflow: hidden;
+
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/Resources/Imgs/Construction_jpeg.jpg) no-repeat center center;
+  background-size: cover;
+  filter: blur(10px);
+  /* adjust blur amount */
+  transform: scale(1.2);
+  /* optional: slightly zoomed out so edges don’t show empty space */
+  z-index: -1;
+  /* behind header content */
+}
+
+header h1 {
+  font-size: 50px;
+  color: #45a049;
+  margin-left: 15px;
+}
+
+header img {
+  height: auto;
+  display: block;
+
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Open-Dyslexic', sans-serif;
+}
+
+main {
+  flex: 1;
 }
 
 form {
@@ -17,15 +76,16 @@ form {
   border-style: solid;
   border-width: 25px;
   border-color: wheat;
+
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: auto;
-  font-size: 50px;
+  z-index: 10;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  border: none;
   background-color: orange;
-  color: white;
 }
 
 .center {
@@ -40,6 +100,31 @@ input {
   font-size: 26px;
 }
 
+ /* Sticky right iframe */
+    .ad-iframe {
+      border-radius: 0;
+      position: fixed;   /* sticks to viewport */
+      top: 0;
+      right: 0;
+      width: 300px;      /* adjust as needed */
+      height: 100vh;     /* always full viewport height */
+      border: none;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    /* Main content should not go under the iframe */
+    .content {
+      margin-right: 300px; /* same as iframe width */
+      padding: 20px;
+    }
+
+    /* Optional: make iframe responsive inside for images/videos */
+    .ad-iframe iframe, .ad-iframe video, .ad-iframe img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* covers the whole iframe area */
+    }
 input[type=text],
 select {
   width: 90%;
@@ -68,7 +153,7 @@ input[type=submit]:hover {
 table {
   background-color: white;
   border-style: dotted;
-  border-color: blue;
+  border-color: rgb(18, 130, 63);
 }
 
 th,
@@ -81,16 +166,7 @@ td {
   border-color: rgb(255, 30, 0);
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  min-height: 100vw;
-  height: 100%;
-  font-size: 36px;
-  font-family: open;
-  text-align: center;
-  font-family: 'Open-Dyslexic', sans-serif;
-}
+
 
 h1 {
   color: rgb(197, 107, 4);
@@ -110,6 +186,7 @@ iframe {
 .image_class_container {
   display: flex;
   justify-content: center;
+  margin-bottom: 200px;
 
 }
 
